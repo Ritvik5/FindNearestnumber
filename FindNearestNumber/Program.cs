@@ -12,7 +12,9 @@
 
             //Console.WriteLine(nearestNum);
 
-            FindTheNumberInfo.ReflectionInfo();
+            //FindTheNumberInfo.ReflectionInfo();
+            FindTheNumberFactory.CreateFindTheNumber();
+            //FindTheNumberFactory.CreateFindTheNumberUsingParameterizedConstructor();
         }
     }
 }

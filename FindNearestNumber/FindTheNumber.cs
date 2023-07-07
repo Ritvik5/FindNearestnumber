@@ -2,6 +2,12 @@
 {
     public class FindTheNumber
     {
+        public FindTheNumber() { }
+
+        public FindTheNumber(int number)
+        {
+
+        }
         public static bool ContainsOnlyEvenDigits(int number)
         {
             while (number != 0)
