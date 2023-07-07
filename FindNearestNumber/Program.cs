@@ -4,13 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the number to find nearesr number: ");
+            //Console.Write("Enter the number to find nearesr number: ");
 
-            int number = Convert.ToInt32(Console.ReadLine());
+            //int number = Convert.ToInt32(Console.ReadLine());
 
-            int nearestNum = FindTheNumber.FindClosestEvenNumber(number);
+            //int nearestNum = FindTheNumber.FindClosestEvenNumber(number);
 
-            Console.WriteLine(nearestNum);
+            //Console.WriteLine(nearestNum);
+
+            FindTheNumberInfo.ReflectionInfo();
         }
     }
 }
