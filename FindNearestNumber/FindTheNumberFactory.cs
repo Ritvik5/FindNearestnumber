@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Reflection;
 
 namespace FindNearestNumber
 {
@@ -17,7 +11,7 @@ namespace FindNearestNumber
             Console.WriteLine(instance);
         }
 
-        public static void CreateFindTheNumberUsingParameterizedConstructor(int number)
+        public static object CreateFindTheNumberUsingParameterizedConstructor(int number)
         {
             Type classType = typeof(FindTheNumber);
 
@@ -26,8 +20,18 @@ namespace FindNearestNumber
 
             // Create an instance of the class using the constructor
             object instance = constructor.Invoke(new object[] { number });
-
             Console.WriteLine(instance);
+            return instance;
+        }
+
+        public static void InvokeFindClosestEvenNumber(int number)
+        {
+            Type type = typeof(FindTheNumber);
+
+            MethodInfo methodInfo = type.GetMethod("FindClosestEvenNumber", BindingFlags.Public | BindingFlags.Static);
+            int result = (int)methodInfo.Invoke(null, new object[] { number });
+
+            Console.WriteLine("Result: " + result);
         }
     }
 }
