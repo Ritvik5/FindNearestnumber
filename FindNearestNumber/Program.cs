@@ -13,8 +13,8 @@
             //Console.WriteLine(nearestNum);
 
             //FindTheNumberInfo.ReflectionInfo();
-            FindTheNumberFactory.CreateFindTheNumber();
-            //FindTheNumberFactory.CreateFindTheNumberUsingParameterizedConstructor();
+            //FindTheNumberFactory.CreateFindTheNumber();
+            FindTheNumberFactory.CreateFindTheNumberUsingParameterizedConstructor(17);
         }
     }
 }

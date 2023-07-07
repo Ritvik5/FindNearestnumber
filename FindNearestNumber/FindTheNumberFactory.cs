@@ -17,6 +17,17 @@ namespace FindNearestNumber
             Console.WriteLine(instance);
         }
 
-        
+        public static void CreateFindTheNumberUsingParameterizedConstructor(int number)
+        {
+            Type classType = typeof(FindTheNumber);
+
+            // Get the constructor that matches the desired parameters
+            ConstructorInfo constructor = classType.GetConstructor(new[] { typeof(int) });
+
+            // Create an instance of the class using the constructor
+            object instance = constructor.Invoke(new object[] { number });
+
+            Console.WriteLine(instance);
+        }
     }
 }
